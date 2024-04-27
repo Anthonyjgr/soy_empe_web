@@ -87,10 +87,9 @@ const Hero = () => {
         <div className={s.photo_c}>
           <img src={photo} alt="empe_photo" />
           <div className={s.center_circle}></div>
-          <div className={s.photo_button_c}></div>
-          <button className={s.portfolio_button}>Portafolio</button>
+          {/* <div className={s.photo_button_c2}></div>
+          <button className={s.portfolio_button2}>Portafolio</button> */}
         </div>
-
         <div className={s.righ_c}>
         <img src={stars} alt="stars" />
           <p>7 Años</p>
