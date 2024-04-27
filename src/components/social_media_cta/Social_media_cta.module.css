@@ -1,0 +1,68 @@
+.main_c {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  height: fit-content;
+}
+
+.text_black {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 70px;
+}
+.text_yellow {
+  line-height: 70px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 64px;
+  color: #ffd600;
+  text-align: center;
+}
+
+.input_c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 812px;
+  height: 80px;
+  border: 1px solid rgb(222, 221, 221);
+  border-radius: 70px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 50px;
+}
+
+.input_c input {
+  height: 40px;
+  width: 100%;
+  padding-left:10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.input_c button {
+  width: 134px;
+  height: 64px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  border-radius: 50px;
+  border: none;
+  background-color: #ffd600;
+  transition: all .3s ease-in-out;
+}
+
+.input_c button:hover {
+  cursor: pointer;
+  background-color: #000000;
+}

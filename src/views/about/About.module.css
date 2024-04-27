@@ -1,0 +1,11 @@
+.main_c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.h1{
+  color: rgb(88, 88, 88);
+  font-size: 64px;
+}
