@@ -66,12 +66,12 @@
     align-items: center;
     justify-content: space-around;
     max-width: 80%;
-    /* width: calc(90%-20px); */
     height: fit-content;
     border-radius: 20px; 
     padding: 20px;
     position: relative;
   }
+
   .inner_menu_c{
     margin-top: 60px;
   }
@@ -82,12 +82,15 @@
     border-radius: 20px;
     
   }
+  .icon{
+    width: 20px;
+  }
   .menu_btn_c{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     padding: 15px;
     background-color:#171717;
     cursor: pointer;
@@ -96,4 +99,18 @@
     top: 10px;
     right: 10px;
   }
+
 }
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+

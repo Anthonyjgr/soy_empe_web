@@ -41,7 +41,7 @@ const Testimonials = () => {
           <div className={s.down_icon}>{icon.hero_down}</div>
         </div>
       </div>
-      {/* cards hero */}
+      {/* cards */}
       <div className={s.down_c}>
         {
           testimonials.map((user)=>(

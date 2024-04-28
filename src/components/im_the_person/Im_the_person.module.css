@@ -3,10 +3,9 @@
   height: fit-content;
   display: flex;
   flex-direction: row;
-  background-color: #F2F4F7 ;
+  background-color: #f2f4f7;
   padding-block: 70px;
   border-radius: 50px;
-
 }
 
 .c_left {
@@ -17,7 +16,7 @@
 }
 .text_yellow {
   font-size: 64px;
-  color: #EEBD06;
+  color: #eebd06;
   font-weight: 500;
   margin: 0;
   line-height: 70px;
@@ -51,128 +50,119 @@
   gap: 20px;
 }
 
-.kpi_c{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+.kpi_c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.text_number{ 
+.text_number {
   font-size: 36px;
   margin: 0;
   font-weight: 600;
 }
 
-.text_description{
+.text_description {
   font-size: 20px;
   margin: 0;
   color: #667085;
 }
 
 .right_down button {
-  color: #EEBD06;
+  color: #eebd06;
   background-color: transparent;
-  border: 1px solid #EEBD06;
+  border: 1px solid #eebd06;
   height: 105px;
   width: 330px;
   font-size: 32px;
   border-radius: 30px;
-  transition: .5s;
+  transition: 0.5s;
   box-shadow: 5px 5px 1px 1px;
 }
 
 .right_down button:hover {
-  background-color: #EEBD06;
+  background-color: #eebd06;
   cursor: pointer;
   color: rgb(255, 255, 255);
   box-shadow: none;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 960px) {
   .main_c {
-    flex-direction: column; 
+    flex-direction: column;
+    width: 100%;
   }
-  
   .c_left {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
   }
+  .photo{
+    width: 70%;
+  }
   .text_yellow {
-    font-size: 48px;
+    font-size: 38px;
     line-height: 0px;
+    text-align: center;
   }
   .text_blak {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 500;
-    line-height: 70px;
+    line-height: 50px;
+    text-align: center;
   }
-  .right_up{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .paragraph {
-    font-size: 20px;
-    margin: 0;
-    font-weight: 300;
-    line-height: 25px;
-  }
-  
   .c_right {
-    width: 100%;
+    width: 90%;
     margin: 0% 5% 0% 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  
-  .right_down {
-    margin-top: 30px;
+  .right_up {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+  }
+  .paragraph {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+  }
+  .right_down {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
   }
-  
-  .kpi_c{
+  .kpi_c {
+    margin-top: 20px;
     display: flex;
     width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .text_number{ 
-    font-size: 36px;
+  .kpi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text_number {
+    font-size: 24px;
     margin: 0;
     font-weight: 600;
   }
-  
-  .text_description{
-    font-size: 20px;
-    margin: 0;
-    color: #667085;
-  }
-  
+
   .right_down button {
-    color: #EEBD06;
-    background-color: transparent;
-    border: 1px solid #EEBD06;
-    height: 105px;
-    width: 330px;
-    font-size: 32px;
-    border-radius: 30px;
-    transition: .5s;
-    box-shadow: 5px 5px 1px 1px;
-  }
-  
-  .right_down button:hover {
-    background-color: #EEBD06;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    box-shadow: none;
+    margin: 0;
+    height: 90px;
+    width: 350px;
   }
 }

@@ -101,6 +101,7 @@ const Navbar = () => {
         style={{
           backgroundColor: !expanded ? "white" : "",
           display: isMobile ? "" : "none",
+          animation: expanded && isMobile ? `${s.slideFromRight} 0.3s ease-in-out` : "",
         }}
       >
         <div onClick={expanded_press} className={s.menu_btn_c}>
@@ -108,7 +109,6 @@ const Navbar = () => {
             src={expanded ? close_icon : menu_icon}
             alt="menu icon"
             className={s.icon}
-            style={{ fill: "blue" }}
           />
         </div>
         <div className={s.inner_menu_c} style={{ display: expanded ? "block" : "none" }}>
@@ -126,6 +126,7 @@ const Navbar = () => {
             className={`${s.menu_item} ${activeItem === "Conóceme" ? s.active : ""}`}
             onClick={(e) => {
               handleItemClick("Conóceme");
+              redirect("about");
               expanded_press();
             }}
           >
@@ -155,6 +156,7 @@ const Navbar = () => {
             className={`${s.menu_item} ${activeItem === "Menbresía" ? s.active : ""}`}
             onClick={(e) => {
               handleItemClick("Menbresía");
+              redirect("membership");
               expanded_press();
             }}
           >

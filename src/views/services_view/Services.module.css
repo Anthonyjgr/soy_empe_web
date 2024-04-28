@@ -11,12 +11,14 @@
 .section_c {
   display: flex;
   flex-direction: row;
+
   align-items: center;
   justify-content: space-between;
   
 }
 .side_a {
   display: flex;
+
   align-items: center;
   justify-content: center;
   width: 50%;
@@ -24,6 +26,7 @@
 
 .side_b {
   display: flex;
+
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;

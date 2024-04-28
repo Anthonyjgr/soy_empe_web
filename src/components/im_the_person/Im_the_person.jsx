@@ -18,12 +18,12 @@ const Im_the_person = () => {
         </div>
         <div className={s.right_down}>
           <div className={s.kpi_c}>
-            <div>
+            <div className={s.kpi}>
               <p className={s.text_number}>+15</p>
               <p className={s.text_description}>Servicios UGC</p>
             </div>
-            <div>
-              <p className={s.text_number}>+140</p>
+            <div className={s.kpi}>
+              <p className={s.text_number}>+25</p>
               <p className={s.text_description}>Proyectos Completados</p>
             </div>
           </div>
