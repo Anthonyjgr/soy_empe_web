@@ -9,18 +9,23 @@ import BulletPoint from "../../components/bullet_points/BulletPoint";
 const services = [
   {
     title: "Definir tu nicho y público objetivo",
+    key:1
   },
   {
     title: "Desarrollar una estrategia de contenido UGC",
+    key:2
   },
   {
     title: "Crear contenido atractivo y efectivo",
+    key:3
   },
   {
     title: "Negociar con marcas y cerrar tratos",
+    key:4
   },
   {
     title: "Medir y analizar tus resultados",
+    key:5
   },
 ];
 const Services = () => {
@@ -32,7 +37,7 @@ const Services = () => {
           <img src={photo_1} alt="section_one_photo" className={s.img}/>
         </div>
         <div className={s.side_b}>
-          <button>Asesorías UGC</button>
+          <button className={s.btn}>Asesorías UGC</button>
           <h1 className={s.h1_one}>
             ¿Eres nuevo en el mundo del UGC y te sientes perdido?
           </h1>
@@ -72,13 +77,13 @@ const Services = () => {
       </section>
       {/* section three */}
       <section className={s.main_c_3}>
-        <h3>En solo 1 hora de videollamada</h3>
+        <h3 className={s.h3}>En solo 1 hora de videollamada</h3> 
         <h2 className={s.title}>
           Te <span style={{ color: "#ffd600" }}>ayudaré a</span>:
         </h2>
         <div className={s.bullet_c}>
           {services.map((bullet) => (
-            <BulletPoint title={bullet.title} />
+            <BulletPoint title={bullet.title} key={bullet.key}/>
           ))}
         </div>
       </section>
@@ -87,21 +92,21 @@ const Services = () => {
       <section className={s.section_c}>
         <div className={s.side_a_four}>
           <img src={photo_3} alt="section_one_photo" className={s.img}/>
-          <button>Agendar mi asesoría</button>
+          <button className={s.four_s_bton}>Agendar mi asesoría</button>
         </div>
-        <div className={s.side_b}>
-          <h2 className={s.title}>¡Y eso no es todo!</h2>
+        <div className={s.side_b_four}>
+          <h2 className={s.title_b}>¡Y eso no es todo!</h2>
           <span className={s.span_one}>
             Después de la videollamada, tendrás acceso a 1 mes de seguimiento por
             WhatsApp, donde podrás:
           </span>
           <ul>
-            <li>Resolver tus dudas.</li>
-            <li>Recibir apoyo personalizado.</li>
-            <li>Monitorizar tu progreso.</li>
+            <li className={s.li}>Resolver tus dudas.</li>
+            <li className={s.li}>Recibir apoyo personalizado.</li>
+            <li className={s.li}>Monitorizar tu progreso.</li>
           </ul>
           <h2 className={s.title_four}>
-          ¿Estás listo para dar el <span style={{ color: "#ffd600" }}>en el UGC? </span>:
+          ¿Estás listo para dar el <span style={{ color: "#ffd600" }}>en el UGC? </span>
         </h2>
         </div>
       </section>

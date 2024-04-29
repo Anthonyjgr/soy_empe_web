@@ -1,15 +1,38 @@
 .main_c{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   width: 245px;
   height: 170px;
 }
-.main_c img{
+.img{
   width: 70px;
 }
-h2{
+.h2{
   text-align: center;
   font-size: 20px;
 }
+
+@media screen and (max-width: 500px){
+  .main_c{
+    width: 245px;
+    height: 120px;
+  }
+  .img{
+    width: 40px;
+  }
+  .h2{
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1250px){
+  .img{
+    width: 50px;
+  }
+  .h2{
+    text-align: center;
+    font-size: 16px;
+  }
+} 
