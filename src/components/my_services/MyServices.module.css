@@ -133,18 +133,19 @@
   .c_left {
     display: flex;
     width: 40%;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    height: 620px;
   }
   .photo {
     width: 100%;
     border-radius: 50px;
+    position: absolute;
+    bottom: 0px;
     background-color: black;
   }
   .right_down{
     width: 100%;
   }
-
   .c_right {
     width: 50%;
     display: flex;
@@ -153,5 +154,6 @@
     align-items: center;
     margin: 0% 0% 0% 0%;
     gap: 15px;
+    height: 620px;
   }
 }

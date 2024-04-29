@@ -9,7 +9,7 @@ function Social_media_cta() {
       <h1 className={s.text_yellow}>Yo te ayudo</h1>
       <div className={s.input_c}>
         <img src={icon} alt="mail_icon" className={s.icon}/>
-        <input type="text"  className={s.input}/>
+        <input type="email"  className={s.input} autoComplete='off'/>
         <button className={s.button}>Enviar</button>
       </div>
     </div>

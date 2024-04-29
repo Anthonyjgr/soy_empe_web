@@ -61,31 +61,38 @@
     padding: 40px 0px;
     gap: 40px;
   }
-  
   .up_icon {
     position: absolute;
     right: 20px;
     top: -20px;
   }
-  
   .title_c {
     width: 90%;
   }
-  
   .title {
     font-size: 35px;
     font-weight: 600;
     line-height: 40px;
     text-align: center;
   }
-  
   .text_yellow {
     font-size: 35px;
     font-weight: 600;
     line-height: 40px;
     text-align: center;
   }
-  
+  .down_c {
+    width:90%;
+    height: fit-content;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1350px){
+  .main_container {
+    width: 100%;
+    height: fit-content;
+    padding: 40px 0px;
+    gap: 40px;
+  }
   .down_c {
     width:90%;
     height: fit-content;
