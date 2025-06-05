@@ -1,6 +1,8 @@
 import React from "react";
 import s from "./Footer.module.css";
 import social_icons from "/all_social_icons.svg";
+import instagram from "/instagram_icon.svg";
+import tiktok from "/tiktok_icon.svg";
 
 const Footer = () => {
   return (
@@ -11,11 +13,18 @@ const Footer = () => {
         <div className={s.middle_content}>
           <div className={s.middle_left}>
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum
-              ligula a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed lobortis orci elementum egestas lobortis.
+              ¡Sígueme en mis redes sociales! Para más tips, contenido exclusivo y
+              actualizaciones sobre mis próximos cursos, ¡sígueme en Instagram y TikTok!
+              Conéctate conmigo y no te pierdas nada.
             </span>
-            <img src={social_icons} alt="social icons" />
+            <div className={s.social}>
+              <a href="https://www.instagram.com/soyempe/?hl=en" target="_blank">
+                <img src={instagram} alt="sigueme en instagram en @soyempe" />
+              </a>
+              <a href="https://www.tiktok.com/@soyempe?_t=ZM-8wuX8yQ2meu&_r=1" target="_blank">
+                <img src={tiktok} alt="sigueme en tiktok en @soyempe" />
+              </a>
+            </div>
           </div>
           <div className={s.middle_right}>
             <div className={s.navigation}>
@@ -29,10 +38,19 @@ const Footer = () => {
             <div className={s.contact}>
               <p className={s.title}>Contacto</p>
               <p className={s.text}>+56 9 7463 1326</p>
-              <p className={s.text}>Soyempe.ch@gmail.com</p>
-              <p className={s.text}>@soyempe</p>
+              <p className={s.text}>soyempe.ch@gmail.com</p>
+              <p className={s.text}>
+                <a href="https://www.instagram.com/soyempe/?hl=en" target="_blank">
+                  Sígueme en Instagram @soyempe
+                </a>
+              </p>
+              <p className={s.text}>
+                <a href="https://www.tiktok.com/@soyempe?_t=ZM-8wuX8yQ2meu&_r=1" target="_blank">
+                  Sígueme en TikTok @soyempe 
+                </a>
+              </p>
             </div>
-            <div className={s.subscribe}>
+            {/* <div className={s.subscribe}>
               <p className={s.title}>Accede a mis ultimas noticias</p>
               <div className={s.input_group}>
                 <input
@@ -45,13 +63,13 @@ const Footer = () => {
                 />
                 <input className={s.button_submit} value="Suscribirme" type="submit" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={s.separtor}></div>
         <div className={s.last_content}>
-          <p>Copyright© 2023 Gracia Digital. All Rights Reserved.</p>
-          <p>User Terms & Conditions | Privacy Policy</p>
+          <p>Copyright© 2025 Gracia Digital. Todos los derechos reservados.</p>
+          <p>Términos y condiciones | Politica de privacidad</p>
         </div>
       </div>
     </div>

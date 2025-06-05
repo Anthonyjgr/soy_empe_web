@@ -1,15 +1,16 @@
 import React from "react";
 import s from "./Courses.module.css";
-import photo_1 from "/public/photo_course_1.png";
-import photo_2 from "/public/photo_course_2.png";
-import photo_3 from "/public/photo_course_3.png";
-import photo_5 from "/public/photo_course_5.png";
-import photo_6 from "/public/photo_course_6.png";
-import photo_7 from "/public/photo_course_7.png";
-import photo_8 from "/public/photo_course_8.png";
-import photo_9 from "/public/photo_services_3.png";
-import star from "/public/star.svg";
+import photo_1 from "/ugc-header.webp";
+import photo_2 from "/photo_course_2.png";
+import photo_3 from "/photo_course_3.png";
+import photo_5 from "/photo_course_5.png";
+import photo_6 from "/photo_course_6.png";
+import photo_7 from "/photo_course_7.png";
+import photo_8 from "/photo_course_8.png";
+import photo_9 from "/photo_services_3.png";
+import star from "/star.svg";
 import Separator from "../../components/separator_slider/Separator";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   return (
@@ -21,27 +22,33 @@ const Courses = () => {
         </div>
         <div className={s.side_b}>
           <h1 className={s.h1_one}>
-            ¡<span style={{ color: "#ffd600" }}>Domina el UGC </span> y conviértete en un
-            creador exitoso!
+            ¿<span style={{ color: "#ffd600" }}>Sabías que puedes ganar dinero </span>{" "}
+            desde casa sin ser influencer?
           </h1>
           <span className={s.span_one}>
-            ¿Quieres aprender a crear contenido UGC que atraiga a las marcas y genere
-            ingresos?
+            Las marcas están buscando personas como tú y yo para que hagamos videos
+            recomendando sus productos. No necesitas ser un experto, solo ser auténtico y
+            mostrar lo que te gusta. ¡Las empresas te pagan por eso!
           </span>
         </div>
       </section>
       {/* section two */}
       <section
         className={s.section_c}
-        style={{ backgroundColor: "#F2F4F7", borderRadius: "50px" }}
+        style={{ backgroundColor: "#F2F4F7", borderRadius: "50px", marginTop: "100px" }}
       >
         <div className={s.side_b_two}>
           <h1 className={s.h1_one}>
-            ¡Entonces este curso<span style={{ color: "#ffd600" }}> es para ti!</span>
+            ¿Te imaginas recibir productos gratis
+            <span style={{ color: "#ffd600" }}>
+              {" "}
+              y que te paguen por compartir tu experiencia?
+            </span>
           </h1>
           <span className={s.span_one}>
-            En <b>"UGC para todos"</b>, te enseñaré desde cero todo lo que necesitas saber
-            para convertirte en un maestro del UGC (User Generated Content)
+            Así es como funciona el <b>UGC (User Generated Content)</b>. Las marcas te
+            pagan para que hagas videos genuinos sobre sus productos, y tú te quedas con
+            todo lo que recibas. ¡Y ni hablar de los pagos que puedes recibir!
           </span>
         </div>
         <div className={s.side_a_two}>
@@ -60,12 +67,11 @@ const Courses = () => {
             en este curso?
           </h2>
           <ul>
-            <li>Conceptos básicos del UGC.</li>
-            <li>Diferencias entre un UGC y un influencer.</li>
-            <li>La estructura perfecta para un video UGC.</li>
-            <li>La fórmula para un Pitch Perfecto.</li>
-            <li>Cómo contactar a las marcas.</li>
-            <li>Cómo crear un portafolio.</li>
+            <li>Tipos de nichos en UGC y cómo elegir el tuyo.</li>
+            <li>Cómo crear la fórmula perfecta para tus videos.</li>
+            <li>Cómo hacer un portafolio que atraiga marcas.</li>
+            <li>Cómo negociar con marcas y emprendedores.</li>
+            <li>Trucos para grabar videos que capturen atención.</li>
           </ul>
         </div>
       </section>
@@ -96,8 +102,8 @@ const Courses = () => {
           </div>
         </div>
       </section>
-      <button>QUIERO HACER EL CURSO</button>
-      <h2 className={s.title_four_cta} >
+      {/* section five */}
+      {/* <h2 className={s.title_four_cta} >
         Eleva tu carrera de UGC con mis recursos descargables:
       </h2>
       <h2
@@ -106,7 +112,6 @@ const Courses = () => {
         ¡Conviértete en un <span style={{ color: "black" }}> imán </span>
         para las marcas y conquista el mundo del UGC!
       </h2>
-      {/* section five */}
       <section className={s.section_c_five}>
         <img src={photo_5} alt="photo_5" className={s.products_img} />
         <img src={photo_6} alt="photo_6" className={s.products_img} />
@@ -121,18 +126,22 @@ const Courses = () => {
         <span>
           <img src={star} alt="star" />
         </span>
-      </h1>
+      </h1> */}
       {/* section six */}
       <section className={s.section_c}>
         <div className={s.side_a_four}>
           <img src={photo_9} alt="section_one_photo" className={s.img} />
         </div>
         <div className={s.side_b}>
-          <h2 className={s.title_four}>¡No esperes más!</h2>
+          <h2 className={s.title_four}>¿Estás listo para empezar?</h2>
           <span className={s.span_one}>
-            Invierte en estos recursos y comienza a crear UGC que te permita conseguir más
-            clientes, aumentar tus ingresos y alcanzar el éxito que mereces
+            Si quieres aprender cómo generar ingresos desde casa sin rodeos, sin trucos y
+            de manera real, esta Masterclass es para ti. Los cupos son limitados, así que
+            no esperes más.
           </span>
+          <Link to="/checkout">
+            <button>INSCRIBIRME EN LA MASTERCLASS</button>
+          </Link>
         </div>
       </section>
     </div>

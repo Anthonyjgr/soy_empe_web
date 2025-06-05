@@ -22,7 +22,17 @@ const Story = () => {
         <span className={s.text_black}>Un poco de </span>
         <span className={s.text_yellow}>mi historia</span>
       </div>
-      {!isMobile ? (
+      <span className={s.span}>
+        ¡Hola, soy Empe! Soy mamá y creadora de contenido. Hace un tiempo, buscando una
+        forma de generar ingresos desde casa, descubrí el mundo del UGC (Contenido
+        Generado por el Usuario).Este tipo de marketing permite que las marcas contraten
+        a personas como tú y como yo para hacer videos sobre productos o servicios. Y lo
+        mejor de todo, ¡te pagan por hacerlo y además te quedas con los productos gratis!
+        <br/> <br/>Empecé en esto sin saber nada, pero ahora vivo de crear contenido. Y quiero
+        enseñarte a ti todo lo que aprendí en el camino, en solo dos horas, para que
+        puedas empezar a generar ingresos desde casa, sin complicaciones.
+      </span>
+      {/* {!isMobile ? (
         <>
           <div className={s.down}>
             <div className={s.down_left}>
@@ -104,7 +114,7 @@ const Story = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

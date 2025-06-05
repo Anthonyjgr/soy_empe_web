@@ -7,7 +7,7 @@
 }
 /* desktop */
 .sub_container {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,6 +70,7 @@
     border-radius: 20px; 
     padding: 20px;
     position: relative;
+    margin-top: 0px;
   }
 
   .inner_menu_c{

@@ -55,7 +55,7 @@ const Navbar = () => {
         >
           Inicio
         </div>
-        <div
+        {/* <div
           className={`${s.menu_item} ${activeItem === "Conóceme" ? s.active : ""}`}
           onClick={(e) => {
             handleItemClick("Conóceme");
@@ -63,7 +63,7 @@ const Navbar = () => {
           }}
         >
           Conóceme
-        </div>
+        </div> */}
         <div
           className={`${s.menu_item} ${activeItem === "Servicios" ? s.active : ""}`}
           onClick={(e) => {
@@ -82,12 +82,12 @@ const Navbar = () => {
         >
           Curso UGC
         </div>
-        <div
+        {/* <div
           className={`${s.menu_item} ${activeItem === "Menbresía" ? s.active : ""}`}
           onClick={() => {handleItemClick("Menbresía"); redirect('membership')}}
         >
           Membresía
-        </div>
+        </div> */}
         <div
           className={`${s.menu_item} ${activeItem === "Contacto" ? s.active : ""}`}
           onClick={() => {handleItemClick("Contacto"); redirect("membership");}}
@@ -122,7 +122,7 @@ const Navbar = () => {
           >
             Inicio
           </div>
-          <div
+          {/* <div
             className={`${s.menu_item} ${activeItem === "Conóceme" ? s.active : ""}`}
             onClick={(e) => {
               handleItemClick("Conóceme");
@@ -131,7 +131,7 @@ const Navbar = () => {
             }}
           >
             Conóceme
-          </div>
+          </div> */}
           <div
             className={`${s.menu_item} ${activeItem === "Servicios" ? s.active : ""}`}
             onClick={(e) => {
@@ -152,7 +152,7 @@ const Navbar = () => {
           >
             Curso UGC
           </div>
-          <div
+          {/* <div
             className={`${s.menu_item} ${activeItem === "Menbresía" ? s.active : ""}`}
             onClick={(e) => {
               handleItemClick("Menbresía");
@@ -161,7 +161,7 @@ const Navbar = () => {
             }}
           >
             Membresía
-          </div>
+          </div> */}
           <div
             className={`${s.menu_item} ${activeItem === "Contacto" ? s.active : ""}`}
             onClick={(e) => {

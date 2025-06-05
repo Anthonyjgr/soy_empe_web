@@ -92,7 +92,7 @@ const Hero = () => {
         </div>
         <div className={s.righ_c}>
         <img src={stars} alt="stars" />
-          <p>7 Años</p>
+          <p>9 Años</p>
           <span className={s.h3}>Experiencia</span>
         </div>
       </div>

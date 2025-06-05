@@ -18,9 +18,9 @@ const Home = () => {
       <Separator/>
       <MyServices/>
       <Story/>
-      <ImThePerson/>
-      <Social_media_cta/>
-      <Testimonials/>
+      {/* <ImThePerson/> */}
+      {/* <Social_media_cta/> */}
+      {/* <Testimonials/> */}
       {/* <img src={banner} alt="" /> */}
     </div>
   )

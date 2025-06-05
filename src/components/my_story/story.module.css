@@ -8,6 +8,12 @@
   width: 90%;
 }
 
+.span{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
 .text_black{
 font-size: 64px;
 font-weight: 500;

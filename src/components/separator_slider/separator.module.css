@@ -10,12 +10,12 @@
   border-radius: 25px;
 }
 
-.item span {
+.span {
    font-size: 28px;
    margin-left: 15px;
 }
 
-.item img {
+.img {
   width: 30px;
   margin-left: 15px;
 }
@@ -25,4 +25,19 @@
   width: 250px;
   font-size: 28px;
   flex-direction: row;
+}
+
+@media screen and (max-width:1200px){
+  .slider_container{
+    height: 70px;
+    border-radius: 25px;
+  }
+  .span {
+     font-size: 22px;
+     margin-left: 0px;
+  }
+  .img {
+    width: 20px;
+    margin-left: 15px;
+  }
 }

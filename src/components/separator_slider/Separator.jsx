@@ -15,34 +15,34 @@ function AutoPlay() {
     cssEase: "linear",
     arrows: false,
   };
-  
+
   return (
     <div className={s.slider_container}>
       <Slider {...settings}>
         <div className={s.item}>
-          <span>Diseños</span>
-          <img src={star} alt="star" />
-        </div>
-        <div className={s.item}>
-          <span>Asesorías</span>
-          <img src={star} alt="star" />
-        </div>
-        <div className={s.item}>
-          <span>UGC</span>
-          <img src={star} alt="star" />
-        </div>
-        <div className={s.item}>
-          <span>Mentorías</span>
-          <img src={star} alt="star" />
-        </div>
-        <div className={s.item}>
-          <span>Cursos</span>
-          <img src={star} alt="star" />
-        </div>
-        <div className={s.item}>
-          <span>Redes Sociales</span>
-          <img src={star} alt="star" />
-        </div>
+          <span className={s.span}>Diseños</span>
+          <img src={star} alt="star" className={s.img}/>
+          </div>
+          <div className={s.item}>
+          <span className={s.span}>Asesorías</span>
+          <img src={star} alt="star" className={s.img}/>
+          </div>
+          <div className={s.item}>
+          <span className={s.span}>UGC</span>
+          <img src={star} alt="star" className={s.img}/>
+          </div>
+          <div className={s.item}>
+          <span className={s.span}>Mentorías</span>
+          <img src={star} alt="star" className={s.img}/>
+          </div>
+          <div className={s.item}>
+          <span className={s.span}>Cursos</span>
+          <img src={star} alt="star" className={s.img}/>
+          </div>
+          <div className={s.item}>
+          <span className={s.span}>Redes Sociales</span>
+          <img src={star} alt="star" className={s.img}/>
+        </div> 
       </Slider>
     </div>
   );

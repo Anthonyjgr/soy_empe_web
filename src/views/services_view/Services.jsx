@@ -106,7 +106,7 @@ const Services = () => {
             <li className={s.li}>Monitorizar tu progreso.</li>
           </ul>
           <h2 className={s.title_four}>
-          ¿Estás listo para dar el <span style={{ color: "#ffd600" }}>en el UGC? </span>
+          ¿Estás a un paso de <span style={{ color: "#ffd600" }}>ser en un UGC? </span>
         </h2>
         </div>
       </section>

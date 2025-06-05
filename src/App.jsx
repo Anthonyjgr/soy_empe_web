@@ -7,6 +7,10 @@ import Footer from "./components/footer/Footer";
 import Courses from "./views/courses/Courses";
 import About from "./views/about/About";
 import Membership from "./views/membership/Membership";
+import SuccessPage from "./components/checkout/SuccessPage";
+import { FailurePage } from "./components/checkout/FailurePage";
+import { PendingPage } from "./components/checkout/PendingPage";
+import CheckoutPage from "./components/checkout/CheckoutPage";
 
 function App() {
   return (
@@ -18,7 +22,11 @@ function App() {
         <Route path="/ugc-course" element={<Courses/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/membership" element={<Membership/>}/>
-        
+
+        <Route path="/success" element={<SuccessPage/>}/>
+        <Route path="/failure" element={<FailurePage/>}/>
+        <Route path="/pending" element={<PendingPage/>}/>
+        <Route path="/checkout" element={<CheckoutPage/>}/>
       </Routes>
       <Footer/>
     </div>
