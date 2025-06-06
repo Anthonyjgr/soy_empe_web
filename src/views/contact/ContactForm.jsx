@@ -99,7 +99,16 @@ export default function ContactForm() {
   };
 
   return (
-    <div style={{ minWidth: "100vw", paddingTop: "100px", paddingBottom: "100px"}}>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        minWidth: "100vw",
+        paddingTop: "100px",
+        paddingBottom: "100px",
+      }}
+    >
       <form
         noValidate
         onSubmit={handleSubmit}
@@ -111,17 +120,22 @@ export default function ContactForm() {
           padding: 20,
           backgroundColor: "#FFD600",
           borderRadius: 8,
+          width:"100%",
           maxWidth: 450,
           margin: "0 auto",
-          marginLeft:"20px", 
-          marginRight:"20px",
-          marginTop:"50px",
-          marginBottom:"50px"
+          marginLeft: "20px",
+          marginRight: "20px",
+          marginTop: "50px",
+          marginBottom: "50px",
         }}
       >
         <h2 style={{ textAlign: "center", marginBottom: 20 }}>Formulario de Contacto</h2>
         {error && <p style={{ color: "red", marginBottom: 12 }}>{error}</p>}
-        {successMsg && <p style={{ color: "black", marginBottom: 12 , fontWeight:"bold"}}>{successMsg}</p>}
+        {successMsg && (
+          <p style={{ color: "black", marginBottom: 12, fontWeight: "bold" }}>
+            {successMsg}
+          </p>
+        )}
 
         <input
           name="name"
