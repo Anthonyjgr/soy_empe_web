@@ -30,8 +30,8 @@ const Navbar = () => {
       navigate("/ugc-course");
     } else if (e === "about") {
       navigate("/about");
-    }else if (e === "membership") {
-      navigate("/membership");
+    }else if (e === "contact") {
+      navigate("/contact");
     }
   };
 
@@ -90,7 +90,7 @@ const Navbar = () => {
         </div> */}
         <div
           className={`${s.menu_item} ${activeItem === "Contacto" ? s.active : ""}`}
-          onClick={() => {handleItemClick("Contacto"); redirect("membership");}}
+          onClick={() => {handleItemClick("Contacto"); redirect("contact");}}
         >
           Contacto
         </div>

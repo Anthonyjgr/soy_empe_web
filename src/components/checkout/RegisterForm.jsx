@@ -20,13 +20,14 @@ export default function RegisterForm({ onUserCreated }) {
     borderRadius: "6px",
     border: "1px solid #ccc",
     fontSize: "16px",
+    maxWidth: "400px",
   };
 
   const buttonStyle = {
     width: "100%",
     padding: "12px",
-    backgroundColor: "#FFD600",
-    color: "black",
+    backgroundColor: "black",
+    color: "white",
     fontWeight: "bold",
     borderRadius: "6px",
     border: "none",
@@ -104,20 +105,22 @@ export default function RegisterForm({ onUserCreated }) {
       noValidate
       onSubmit={handleSubmit}
       style={{
-        maxWidth: 400,
-        margin: "20px auto",
+        display:"flex",
+        flexDirection:"column",
+        alignItems:"center",
+        justifyContent:"center",
         padding: 20,
-        backgroundColor: "#f9fafb",
+        backgroundColor: "#FFD600",
         borderRadius: 8,
       }}
     >
       <h2 style={{ textAlign: "center", marginBottom: 20 }}>
-        Registro para Masterclass UGC Para Todos
+        Registro para la Masterclass UGC Para Todos
       </h2>
       {error && <p style={{ color: "red", marginBottom: 12 }}>{error}</p>}
       <input
         name="name"
-        placeholder="Nombre"
+        placeholder="Nombre *"
         onChange={handleChange}
         style={inputStyle}
       />
@@ -125,7 +128,7 @@ export default function RegisterForm({ onUserCreated }) {
 
       <input
         name="lastName"
-        placeholder="Apellido"
+        placeholder="Apellido *"
         onChange={handleChange}
         style={inputStyle}
       />
@@ -133,7 +136,7 @@ export default function RegisterForm({ onUserCreated }) {
       <input
         type="email"
         name="email"
-        placeholder="Correo electrónico"
+        placeholder="Correo electrónico *"
         onChange={handleChange}
         style={inputStyle}
       />
@@ -141,7 +144,7 @@ export default function RegisterForm({ onUserCreated }) {
       <input
         type="email"
         name="confirmEmail"
-        placeholder="Confirmar correo electrónico"
+        placeholder="Confirmar correo electrónico *"
         onChange={handleChange}
         style={inputStyle}
         onPaste={(e) => e.preventDefault()} // bloquea pegar
@@ -153,7 +156,7 @@ export default function RegisterForm({ onUserCreated }) {
       )}
       <input
         name="phone"
-        placeholder="Teléfono"
+        placeholder="Teléfono *"
         onChange={handleChange}
         style={inputStyle}
       />

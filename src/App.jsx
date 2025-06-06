@@ -11,6 +11,7 @@ import SuccessPage from "./components/checkout/SuccessPage";
 import { FailurePage } from "./components/checkout/FailurePage";
 import { PendingPage } from "./components/checkout/PendingPage";
 import CheckoutPage from "./components/checkout/CheckoutPage";
+import ContactForm from "./views/contact/ContactForm";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/ugc-course" element={<Courses/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/membership" element={<Membership/>}/>
+        <Route path="/contact" element={<ContactForm/>}/>
 
         <Route path="/success" element={<SuccessPage/>}/>
         <Route path="/failure" element={<FailurePage/>}/>
