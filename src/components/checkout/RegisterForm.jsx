@@ -69,8 +69,6 @@ export default function RegisterForm({ onUserCreated }) {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const baseUrl = "http://localhost:3000";
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
@@ -92,7 +90,7 @@ export default function RegisterForm({ onUserCreated }) {
     };
 
     try {
-      const res = await axios.post(`${baseUrl}/api/masterclass-users/create`, formData);
+      const res = await axios.post(`/api/masterclass-users/create`, formData);
       onUserCreated(res.data.userId);
     } catch (err) {
       setError(err.response?.data?.message || "Error creando usuario");
