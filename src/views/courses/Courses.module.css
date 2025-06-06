@@ -107,11 +107,42 @@ button:hover {
 li {
   font-size: 30px;
 }
+
 .side_a_four {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
+}
+
+.side_a_four2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+
+.cta {
+  position: absolute;
+  top: 470px;
+  margin: 0;
+}
+
+.cta button {
+  border: 2px solid white;
+  animation: scaleDownUp 3s ease-in-out infinite;
+  margin: 0;
+}
+
+@keyframes scaleDownUp {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
 }
 
 /* section four */
@@ -227,6 +258,14 @@ li {
 } */
 
 @media screen and (max-width: 800px) {
+  .cta {
+    top: 170px;
+  }
+  .cta button {
+    top: 170px;
+    font-size: 14px;
+    width: 90vw;
+  }
   .main_c {
     width: 90%;
   }
@@ -305,9 +344,14 @@ li {
     height: fit-content;
     gap: 20px;
   }
+  .price {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
   .h1_four {
     margin-top: 30px;
     font-size: 30px;
+    text-align: center;
   }
   .card_title {
     font-size: 24px;
@@ -350,6 +394,9 @@ li {
 }
 
 @media screen and (min-width: 801px) and (max-width: 1300px) {
+  .cta {
+    top: 260px;
+  }
   .main_c {
     width: 90%;
   }

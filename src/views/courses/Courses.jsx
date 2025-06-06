@@ -1,13 +1,9 @@
 import React from "react";
 import s from "./Courses.module.css";
-import photo_1 from "/ugc-header.webp";
-import photo_2 from "/photo_course_2.png";
-import photo_3 from "/photo_course_3.png";
-import photo_5 from "/photo_course_5.png";
-import photo_6 from "/photo_course_6.png";
-import photo_7 from "/photo_course_7.png";
-import photo_8 from "/photo_course_8.png";
-import photo_9 from "/photo_services_3.png";
+import photo_1 from "/ugc-1.webp";
+import photo_2 from "/ugc-2.webp";
+import photo_3 from "/ugc-3.webp";
+import photo_9 from "/ugc-4.webp";
 import star from "/star.svg";
 import Separator from "../../components/separator_slider/Separator";
 import { Link } from "react-router-dom";
@@ -129,8 +125,11 @@ const Courses = () => {
       </h1> */}
       {/* section six */}
       <section className={s.section_c}>
-        <div className={s.side_a_four}>
+        <div className={s.side_a_four2}>
           <img src={photo_9} alt="section_one_photo" className={s.img} />
+          <Link to="/checkout" className={s.cta}>
+            <button>INSCRIBIRME EN LA MASTERCLASS</button>
+          </Link>
         </div>
         <div className={s.side_b}>
           <h2 className={s.title_four}>¿Estás listo para empezar?</h2>
@@ -139,13 +138,10 @@ const Courses = () => {
             de manera real, esta Masterclass es para ti. Los cupos son limitados, así que
             no esperes más.
           </span>
-          <div style={{display:"flex", gap:"10px"}}>
-            <span style={{ fontSize: "30px", fontWeight: "bold" }}>Por tan solo</span>
-            <span style={{ fontSize: "30px", fontWeight: "bold" }}>40.000 CLP</span>
+          <div style={{ display: "flex", gap: "10px" }} className={s.price}>
+            <span style={{ fontSize: "30px", fontWeight: "bold" }} >Por tan solo</span>
+            <span style={{ fontSize: "30px", fontWeight: "bold" }} >40.000 CLP</span>
           </div>
-          <Link to="/checkout">
-            <button>INSCRIBIRME EN LA MASTERCLASS</button>
-          </Link>
         </div>
       </section>
     </div>
