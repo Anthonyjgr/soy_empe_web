@@ -7,7 +7,7 @@ const PUBLIC_KEY = import.meta.env.VITE_MP_PUBLIC_KEY
 export default function PaymentWidget({ userId }) {
   const [preferenceId, setPreferenceId] = useState(null);
   
-    const price=100
+  const price= 40000
 
   useEffect(() => {
     initMercadoPago(PUBLIC_KEY, { locale: "es-CL" });
