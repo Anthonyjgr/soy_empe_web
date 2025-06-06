@@ -257,7 +257,14 @@ li {
   }
 } */
 
+.counter{
+  margin-bottom: 170px;
+}
+
 @media screen and (max-width: 800px) {
+  .counter{
+  margin-bottom: 0px;
+}
   .cta {
     top: 170px;
   }
@@ -316,7 +323,6 @@ li {
     position: static;
     border-radius: 50px;
     bottom: 20px;
-    background-color: #ffd600;
     max-width: 200px;
   }
 
@@ -401,7 +407,7 @@ li {
     width: 90%;
   }
   .section_c {
-    padding: 30px;
+    padding: 20px;
   }
   .side_a {
     width: 100%;
@@ -446,8 +452,7 @@ li {
     position: static;
     border-radius: 50px;
     bottom: 20px;
-    background-color: #ffd600;
-    max-width: 250px;
+    max-width: 340px;
   }
 
   /* section three */

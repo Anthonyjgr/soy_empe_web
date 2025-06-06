@@ -7,6 +7,7 @@ import photo_9 from "/ugc-4.webp";
 import star from "/star.svg";
 import Separator from "../../components/separator_slider/Separator";
 import { Link } from "react-router-dom";
+import CountdownBar from "../../components/Counter";
 
 const Courses = () => {
   return (
@@ -18,7 +19,7 @@ const Courses = () => {
         </div>
         <div className={s.side_b}>
           <h1 className={s.h1_one}>
-            ¿<span style={{ color: "#ffd600" }}>Sabías que puedes ganar dinero </span>{" "}
+            ¿<span style={{ color: "#BDA896" }}>Sabías que puedes ganar dinero </span>{" "}
             desde casa sin ser influencer?
           </h1>
           <span className={s.span_one}>
@@ -28,15 +29,20 @@ const Courses = () => {
           </span>
         </div>
       </section>
+
+      {/* countdown */}
+      <div className={s.counter}>
+        <CountdownBar />
+      </div>
       {/* section two */}
       <section
         className={s.section_c}
-        style={{ backgroundColor: "#F2F4F7", borderRadius: "50px", marginTop: "100px" }}
+        style={{ backgroundColor: "white", borderRadius: "50px" }}
       >
         <div className={s.side_b_two}>
           <h1 className={s.h1_one}>
             ¿Te imaginas recibir productos gratis
-            <span style={{ color: "#ffd600" }}>
+            <span style={{ color: "#BDA896" }}>
               {" "}
               y que te paguen por compartir tu experiencia?
             </span>
@@ -51,7 +57,9 @@ const Courses = () => {
           <img src={photo_2} alt="section_one_photo" className={s.img} />
         </div>
       </section>
-      <Separator />
+      <div style={{zIndex:30, width:"100%"}}>
+        <Separator />
+      </div>
       {/* section three */}
       <section className={s.section_c}>
         <div className={s.side_a_four}>
@@ -59,7 +67,7 @@ const Courses = () => {
         </div>
         <div className={s.side_b}>
           <h2 className={s.title_four}>
-            ¿Qué <span style={{ color: "#ffd600" }}> aprenderás </span>
+            ¿Qué <span style={{ color: "#BDA896" }}> aprenderás </span>
             en esta Masterclass?
           </h2>
           <ul>
@@ -139,8 +147,8 @@ const Courses = () => {
             no esperes más.
           </span>
           <div style={{ display: "flex", gap: "10px" }} className={s.price}>
-            <span style={{ fontSize: "30px", fontWeight: "bold" }} >Por tan solo</span>
-            <span style={{ fontSize: "30px", fontWeight: "bold" }} >40.000 CLP</span>
+            <span style={{ fontSize: "30px", fontWeight: "bold" }}>Por tan solo</span>
+            <span style={{ fontSize: "30px", fontWeight: "bold" }}>40.000 CLP</span>
           </div>
         </div>
       </section>
