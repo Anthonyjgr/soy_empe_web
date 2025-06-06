@@ -139,6 +139,10 @@ const Courses = () => {
             de manera real, esta Masterclass es para ti. Los cupos son limitados, así que
             no esperes más.
           </span>
+          <div style={{display:"flex", gap:"10px"}}>
+            <span style={{ fontSize: "30px", fontWeight: "bold" }}>Por tan solo</span>
+            <span style={{ fontSize: "30px", fontWeight: "bold" }}>40.000 CLP</span>
+          </div>
           <Link to="/checkout">
             <button>INSCRIBIRME EN LA MASTERCLASS</button>
           </Link>
