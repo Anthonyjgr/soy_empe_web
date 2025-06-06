@@ -2,9 +2,9 @@ import axios from 'axios';
 
 const instance = axios.create({
   // production
-  // baseURL: import.meta.env.VITE_REACT_APP_API_BASE_URL, 
+  baseURL: import.meta.env.VITE_REACT_APP_API_BASE_URL, 
   // development
-  baseURL: "http://localhost:3000",
+  // baseURL: "http://localhost:3000",
   withCredentials: true, // Permite el envío automático de cookies HTTPOnly
 });
 
