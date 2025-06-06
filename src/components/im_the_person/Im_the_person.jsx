@@ -1,6 +1,7 @@
 import React from 'react'
 import s from "./Im_the_person.module.css"
 import photo from "/im_empe_photo.png"
+import { Link } from 'react-router-dom';
 
 const Im_the_person = () => {
   return (
@@ -27,7 +28,9 @@ const Im_the_person = () => {
               <p className={s.text_description}>Proyectos Completados</p>
             </div>
           </div>
-          <button>¡Conectemos!</button>
+          <Link to="/contact">
+            <button>¡Conectemos!</button>
+          </Link>
         </div>
       </div>
     </div>

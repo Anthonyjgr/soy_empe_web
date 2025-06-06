@@ -80,7 +80,7 @@ const Navbar = () => {
             redirect("course");
           }}
         >
-          Curso UGC
+          Masterclass UGC
         </div>
         {/* <div
           className={`${s.menu_item} ${activeItem === "Menbresía" ? s.active : ""}`}
@@ -150,7 +150,7 @@ const Navbar = () => {
               expanded_press();
             }}
           >
-            Curso UGC
+            Masterclass UGC
           </div>
           {/* <div
             className={`${s.menu_item} ${activeItem === "Menbresía" ? s.active : ""}`}

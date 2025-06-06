@@ -3,11 +3,14 @@ import s from "./Footer.module.css";
 import social_icons from "/all_social_icons.svg";
 import instagram from "/instagram_icon.svg";
 import tiktok from "/tiktok_icon.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className={s.main_c}>
-      <button className={s.button}>Conectemos</button>
+      <Link to="/contact" style={{textDecoration:"none"}}>
+        <button  className={s.button}>Conectemos</button>
+      </Link>
       <div className={s.sub_c}>
         <div className={s.separtor}></div>
         <div className={s.middle_content}>
@@ -21,7 +24,10 @@ const Footer = () => {
               <a href="https://www.instagram.com/soyempe/?hl=en" target="_blank">
                 <img src={instagram} alt="sigueme en instagram en @soyempe" />
               </a>
-              <a href="https://www.tiktok.com/@soyempe?_t=ZM-8wuX8yQ2meu&_r=1" target="_blank">
+              <a
+                href="https://www.tiktok.com/@soyempe?_t=ZM-8wuX8yQ2meu&_r=1"
+                target="_blank"
+              >
                 <img src={tiktok} alt="sigueme en tiktok en @soyempe" />
               </a>
             </div>
@@ -32,8 +38,8 @@ const Footer = () => {
               <p className={s.text}>Inicio</p>
               <p className={s.text}>Conóceme</p>
               <p className={s.text}>Servicios</p>
-              <p className={s.text}>Curso UGC</p>
-              <p className={s.text}>Membresía</p>
+              <p className={s.text}>Masterclass UGC</p>
+              {/* <p className={s.text}>Membresía</p> */}
             </div>
             <div className={s.contact}>
               <p className={s.title}>Contacto</p>
@@ -45,8 +51,11 @@ const Footer = () => {
                 </a>
               </p>
               <p className={s.text}>
-                <a href="https://www.tiktok.com/@soyempe?_t=ZM-8wuX8yQ2meu&_r=1" target="_blank">
-                  Sígueme en TikTok @soyempe 
+                <a
+                  href="https://www.tiktok.com/@soyempe?_t=ZM-8wuX8yQ2meu&_r=1"
+                  target="_blank"
+                >
+                  Sígueme en TikTok @soyempe
                 </a>
               </p>
             </div>

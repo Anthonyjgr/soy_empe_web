@@ -5,39 +5,44 @@ import photo_2 from "/public/photo_services_2.png";
 import photo_3 from "/public/photo_services_3.png";
 import Separator from "../../components/separator_slider/Separator";
 import BulletPoint from "../../components/bullet_points/BulletPoint";
+import { Link, useNavigate } from "react-router-dom";
 
 const services = [
   {
     title: "Definir tu nicho y público objetivo",
-    key:1
+    key: 1,
   },
   {
     title: "Desarrollar una estrategia de contenido UGC",
-    key:2
+    key: 2,
   },
   {
     title: "Crear contenido atractivo y efectivo",
-    key:3
+    key: 3,
   },
   {
     title: "Negociar con marcas y cerrar tratos",
-    key:4
+    key: 4,
   },
   {
     title: "Medir y analizar tus resultados",
-    key:5
+    key: 5,
   },
 ];
 const Services = () => {
+
+  const navigate= useNavigate()
   return (
     <div className={s.main_c}>
       {/* section one */}
       <section className={s.section_c}>
         <div className={s.side_a}>
-          <img src={photo_1} alt="section_one_photo" className={s.img}/>
+          <img src={photo_1} alt="section_one_photo" className={s.img} />
         </div>
         <div className={s.side_b}>
-          <button className={s.btn}>Asesorías UGC</button>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
+            <button className={s.btn}>Asesorías UGC</button>
+          </Link>
           <h1 className={s.h1_one}>
             ¿Eres nuevo en el mundo del UGC y te sientes perdido?
           </h1>
@@ -72,18 +77,18 @@ const Services = () => {
           </span>
         </div>
         <div className={s.side_a}>
-          <img src={photo_2} alt="section_one_photo" className={s.img}/>
+          <img src={photo_2} alt="section_one_photo" className={s.img} />
         </div>
       </section>
       {/* section three */}
       <section className={s.main_c_3}>
-        <h3 className={s.h3}>En solo 1 hora de videollamada</h3> 
+        <h3 className={s.h3}>En solo 1 hora de videollamada</h3>
         <h2 className={s.title}>
           Te <span style={{ color: "#ffd600" }}>ayudaré a</span>:
         </h2>
         <div className={s.bullet_c}>
           {services.map((bullet) => (
-            <BulletPoint title={bullet.title} key={bullet.key}/>
+            <BulletPoint title={bullet.title} key={bullet.key} />
           ))}
         </div>
       </section>
@@ -91,8 +96,9 @@ const Services = () => {
       {/* section four */}
       <section className={s.section_c}>
         <div className={s.side_a_four}>
-          <img src={photo_3} alt="section_one_photo" className={s.img}/>
-          <button className={s.four_s_bton}>Agendar mi asesoría</button>
+          <img src={photo_3} alt="section_one_photo" className={s.img} />
+          <button onClick={()=>navigate("/contact")} className={s.four_s_bton}>Agendar mi asesoría</button>
+
         </div>
         <div className={s.side_b_four}>
           <h2 className={s.title_b}>¡Y eso no es todo!</h2>
@@ -106,8 +112,8 @@ const Services = () => {
             <li className={s.li}>Monitorizar tu progreso.</li>
           </ul>
           <h2 className={s.title_four}>
-          ¿Estás a un paso de <span style={{ color: "#ffd600" }}>ser en un UGC? </span>
-        </h2>
+            ¿Estás a un paso de <span style={{ color: "#ffd600" }}>ser en un UGC? </span>
+          </h2>
         </div>
       </section>
     </div>

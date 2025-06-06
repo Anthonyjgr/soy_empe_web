@@ -64,7 +64,7 @@ const Courses = () => {
         <div className={s.side_b}>
           <h2 className={s.title_four}>
             ¿Qué <span style={{ color: "#ffd600" }}> aprenderás </span>
-            en este curso?
+            en esta Masterclass?
           </h2>
           <ul>
             <li>Tipos de nichos en UGC y cómo elegir el tuyo.</li>
@@ -77,7 +77,7 @@ const Courses = () => {
       </section>
       {/* section four */}
       <section className={s.section_c_four}>
-        <h1 className={s.h1_four}>Este curso es para ti si:</h1>
+        <h1 className={s.h1_four}>Esta Masterclass es para ti si:</h1>
         <div className={s.cards_c}>
           <div className={s.card_c}>
             <h2 className={s.card_title}>Eres estudiante</h2>
