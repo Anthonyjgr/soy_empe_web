@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import axios from "../../config/axios";
 import { initMercadoPago, Wallet } from "@mercadopago/sdk-react";
 
-const PUBLIC_KEY = "APP_USR-e2d5c031-4b82-4883-9ca9-012b0c752f47";
+const PUBLIC_KEY = import.meta.env.VITE_MP_PUBLIC_KEY
 
 export default function PaymentWidget({ userId }) {
   const [preferenceId, setPreferenceId] = useState(null);
   
-    const baseUrl= "http://localhost:3000"
     const price=100
 
   useEffect(() => {
@@ -51,5 +50,3 @@ export default function PaymentWidget({ userId }) {
     </div>
   );
 }
-
-  
