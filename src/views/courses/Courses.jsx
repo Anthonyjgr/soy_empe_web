@@ -53,9 +53,9 @@ const Courses = () => {
             todo lo que recibas. ¡Y ni hablar de los pagos que puedes recibir!
           </span>
         </div>
-        <div className={s.side_a_two}>
-          <img src={photo_2} alt="section_one_photo" className={s.img} />
-        </div>
+          <div className={s.side_a_two}>
+            <img src={photo_2} alt="section_one_photo" className={s.img} />
+          </div>
       </section>
       <div style={{zIndex:30, width:"100%"}}>
         <Separator />

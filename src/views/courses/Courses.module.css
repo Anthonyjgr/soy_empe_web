@@ -41,7 +41,7 @@
 }
 
 .img {
-  width: 100%;
+  width: 40vw;
 }
 
 /* section one */
@@ -85,23 +85,14 @@ button:hover {
 .side_a_two {
   display: flex;
   width: 50%;
-  height: 500px;
   position: relative;
 }
-.side_a_two .img {
-  display: flex;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-radius: 50px;
-}
-
 /* section three */
 
 .title_four {
   font-size: 50px;
   text-align: left;
-  margin: 0;
+  margin: 30px 30px 30px 30px;
 }
 
 li {
@@ -125,7 +116,7 @@ li {
 
 .cta {
   position: absolute;
-  top: 470px;
+  top: 60%;
   margin: 0;
 }
 
@@ -160,7 +151,7 @@ li {
 
 .h1_four {
   font-size: 64px;
-  margin: 0;
+  max-width: 90%;
 }
 
 .cards_c {
@@ -257,19 +248,19 @@ li {
   }
 } */
 
-.counter{
+.counter {
   margin-bottom: 170px;
 }
 
 @media screen and (max-width: 800px) {
-  .counter{
-  margin-bottom: 0px;
-}
+  .counter {
+    margin-bottom: 0px;
+  }
   .cta {
-    top: 170px;
+    top: 60%;
   }
   .cta button {
-    top: 170px;
+    top: 60%;
     font-size: 14px;
     width: 90vw;
   }
@@ -301,6 +292,7 @@ li {
     font-size: 24px;
     text-align: center;
     margin: 0;
+    margin: 30px 30px 30px 30px;
   }
 
   /* section two */
@@ -313,17 +305,18 @@ li {
     justify-content: center;
   }
   .side_a_two {
-    height: 200px;
     align-items: center;
     justify-content: center;
     display: flex;
   }
   .side_a_two .img {
     display: flex;
-    position: static;
     border-radius: 50px;
-    bottom: 20px;
-    max-width: 200px;
+    bottom: 300px;
+  }
+
+  .img {
+    width: 100vw;
   }
 
   /* section three */
@@ -373,6 +366,8 @@ li {
 
   .title_four {
     font-size: 30px;
+    max-width: 90%;
+    margin: 30px 30px 30px 30px;
   }
 
   .title_four_cta {
@@ -401,7 +396,7 @@ li {
 
 @media screen and (min-width: 801px) and (max-width: 1300px) {
   .cta {
-    top: 260px;
+    top: 60%;
   }
   .main_c {
     width: 90%;
@@ -430,7 +425,7 @@ li {
   .title_four {
     font-size: 30px;
     text-align: center;
-    margin: 0;
+    margin: 30px 30px 30px 30px;
   }
 
   /* section two */
@@ -442,17 +437,14 @@ li {
     width: 50%;
   }
   .side_a_two {
-    height: 200px;
     align-items: center;
     justify-content: center;
     display: flex;
   }
   .side_a_two .img {
     display: flex;
-    position: static;
     border-radius: 50px;
-    bottom: 20px;
-    max-width: 340px;
+    bottom: 200px;
   }
 
   /* section three */
@@ -497,6 +489,8 @@ li {
 
   .title_four {
     font-size: 30px;
+    max-width: 90%;
+    margin: 30px 30px 30px 30px;
   }
 
   .title_four_cta {
