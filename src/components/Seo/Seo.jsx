@@ -1,3 +1,4 @@
+import react from "react"
 import { Helmet } from "react-helmet-async";
 
 const Seo =({ title, description, url })=> {
