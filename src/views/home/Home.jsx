@@ -5,7 +5,7 @@ import Story from "../../components/my_story/Story";
 import ImThePerson from "../../components/im_the_person/Im_the_person";
 import Testimonials from "../../components/testimonials/Testimonials";
 import Social_media_cta from "../../components/social_media_cta/Social_media_cta";
-import banner from "/section_banner.svg";
+// import banner from "/section_banner.svg";
 import Footer from "../../components/footer/Footer";
 import Separator from "../../components/separator_slider/Separator";
 import MyServices from "../../components/my_services/MyServices";
