@@ -8,10 +8,16 @@ import star from "/star.svg";
 import Separator from "../../components/separator_slider/Separator";
 import { Link } from "react-router-dom";
 import CountdownBar from "../../components/Counter";
+import Seo from "../../components/Seo/SEO";
 
 const Courses = () => {
   return (
     <div className={s.main_c}>
+      <Seo
+        title="Masterclass | Soyempe"
+        description="Aprende y crece con las Masterclass de Soyempe. Capacítate en estrategias digitales, marketing y gestión para llevar tu marca personal, empresa o cuenta de Instagram/TikTok al siguiente nivel."
+        url="https://www.www.soyempe.com/ugc-course"
+      />
       {/* section one */}
       <section className={s.section_c}>
         <div className={s.side_a}>
@@ -53,11 +59,11 @@ const Courses = () => {
             todo lo que recibas. ¡Y ni hablar de los pagos que puedes recibir!
           </span>
         </div>
-          <div className={s.side_a_two}>
-            <img src={photo_2} alt="section_one_photo" className={s.img} />
-          </div>
+        <div className={s.side_a_two}>
+          <img src={photo_2} alt="section_one_photo" className={s.img} />
+        </div>
       </section>
-      <div style={{zIndex:30, width:"100%"}}>
+      <div style={{ zIndex: 30, width: "100%" }}>
         <Separator />
       </div>
       {/* section three */}

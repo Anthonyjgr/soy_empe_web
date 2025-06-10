@@ -6,6 +6,7 @@ import photo_3 from "/public/photo_services_3.png";
 import Separator from "../../components/separator_slider/Separator";
 import BulletPoint from "../../components/bullet_points/BulletPoint";
 import { Link, useNavigate } from "react-router-dom";
+import Seo from "../../components/Seo/SEO";
 
 const services = [
   {
@@ -30,10 +31,14 @@ const services = [
   },
 ];
 const Services = () => {
-
-  const navigate= useNavigate()
+  const navigate = useNavigate();
   return (
     <div className={s.main_c}>
+      <Seo
+        title="Servicios | Soyempe"
+        description="Descubre los servicios de Soyempe diseñados para impulsar tu marca personal, empresa o cuenta de Instagram/TikTok. Ofrecemos soluciones estratégicas para tu crecimiento y éxito digital."
+        url="https://www.soyempe.com/services"
+      />
       {/* section one */}
       <section className={s.section_c}>
         <div className={s.side_a}>
@@ -97,8 +102,9 @@ const Services = () => {
       <section className={s.section_c}>
         <div className={s.side_a_four}>
           <img src={photo_3} alt="section_one_photo" className={s.img} />
-          <button onClick={()=>navigate("/contact")} className={s.four_s_bton}>Agendar mi asesoría</button>
-
+          <button onClick={() => navigate("/contact")} className={s.four_s_bton}>
+            Agendar mi asesoría
+          </button>
         </div>
         <div className={s.side_b_four}>
           <h2 className={s.title_b}>¡Y eso no es todo!</h2>

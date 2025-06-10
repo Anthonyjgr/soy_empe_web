@@ -12,11 +12,13 @@ import { FailurePage } from "./components/checkout/FailurePage";
 import { PendingPage } from "./components/checkout/PendingPage";
 import CheckoutPage from "./components/checkout/CheckoutPage";
 import ContactForm from "./views/contact/ContactForm";
+import Analytics from "./components/Seo/Analytics";
 
 function App() {
   return (
     <div className={s.main_container}>
       <Navbar />
+      <Analytics />
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/services" element={<Services/>}/>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "../../config/axios";
+import Seo from "../../components/Seo/SEO";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -109,6 +110,11 @@ export default function ContactForm() {
         paddingBottom: "100px",
       }}
     >
+      <Seo
+        title="Contacto | Soyempe"
+        description="¿Listo para escalar tu proyecto? Contáctanos en Soyempe desde Chile para asesoría personalizada en el crecimiento de tu marca personal, empresa o perfil de Instagram/TikTok. ¡Conectemos!"
+        url="https://www.www.soyempe.com/contact"
+      />
       <form
         noValidate
         onSubmit={handleSubmit}
@@ -120,7 +126,7 @@ export default function ContactForm() {
           padding: 20,
           backgroundColor: "#FFD600",
           borderRadius: 8,
-          width:"100%",
+          width: "100%",
           maxWidth: 450,
           margin: "0 auto",
           marginLeft: "20px",
