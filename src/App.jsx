@@ -12,7 +12,7 @@ import { FailurePage } from "./components/checkout/FailurePage";
 import { PendingPage } from "./components/checkout/PendingPage";
 import CheckoutPage from "./components/checkout/CheckoutPage";
 import ContactForm from "./views/contact/ContactForm";
-import Analytics from "./components/Seo/Analytics";
+import Analytics from "./components/seo/Analytics";
 
 function App() {
   return (

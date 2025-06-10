@@ -6,7 +6,7 @@ import photo_3 from "/public/photo_services_3.png";
 import Separator from "../../components/separator_slider/Separator";
 import BulletPoint from "../../components/bullet_points/BulletPoint";
 import { Link, useNavigate } from "react-router-dom";
-import Seo from "../../components/Seo/SEO";
+import Seo from "../../components/seo/Seo";
 
 const services = [
   {

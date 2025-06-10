@@ -9,7 +9,8 @@ import banner from "/section_banner.svg";
 import Footer from "../../components/footer/Footer";
 import Separator from "../../components/separator_slider/Separator";
 import MyServices from "../../components/my_services/MyServices";
-import Seo from "../../components/Seo/SEO";
+import Seo from "../../components/seo/Seo";
+
 
 const Home = () => {
   return (

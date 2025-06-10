@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "../../config/axios";
-import Seo from "../../components/Seo/SEO";
+import Seo from "../../components/seo/Seo";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
