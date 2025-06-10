@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import RegisterForm from "./RegisterForm";
 import PaymentWidget from "./PaymentWidget";
-import Seo from "../seo/Seo";
+import Seo from "../GTM/Seo";
 
 export default function CheckoutPage() {
   const [userId, setUserId] = useState(null);

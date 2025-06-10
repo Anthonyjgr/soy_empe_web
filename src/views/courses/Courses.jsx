@@ -8,7 +8,7 @@ import star from "/star.svg";
 import Separator from "../../components/separator_slider/Separator";
 import { Link } from "react-router-dom";
 import CountdownBar from "../../components/Counter";
-import Seo from "../../components/seo/Seo"
+import Seo from "../../components/GTM/Seo"
 
 const Courses = () => {
   return (

@@ -9,7 +9,7 @@ import Social_media_cta from "../../components/social_media_cta/Social_media_cta
 import Footer from "../../components/footer/Footer";
 import Separator from "../../components/separator_slider/Separator";
 import MyServices from "../../components/my_services/MyServices";
-import Seo from "../../components/seo/Seo"
+import Seo from "../../components/GTM/Seo"
 
 
 const Home = () => {
